@@ -157,8 +157,18 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(array,string){
+    //make an empty array so that we can push our flavours to it
+    const filteredFlavours=[];
+    //loop through the entire array
+    for(let i=o; i<array.length; i++){
+        //if the index contains the string
+        if(array[i].includes(string)){
+            //push that index to the new array
+            filteredFlavours.push(array[i]);
+        }
+    }
+    return filteredFlavours;
 }
 
 
