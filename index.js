@@ -80,10 +80,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(originalFlavors){
-   const newArray=[...originalFlavors];
-   newArray.unshift("Rainbow Sherbert!");
-   console.log(newArray);
+function addFlavor(array, string){
+    array.unshift(string);
+    return array;
 }
 
 
@@ -98,12 +97,10 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(originalFlavors){
-   const newArray=[...originalFlavors];
-
+function removeLastFlavor(array, string){
+    array.pop(string);
+    return array;
 }
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
@@ -116,8 +113,9 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(array){
+    array[i];
+    return array[i];
 }
 
 
@@ -136,8 +134,14 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(array, string){
+    for (let i=0; i<array.length; i++){
+        if(array[i]===string){
+            array.splic(i,1);
+        
+        }
+    }
+    return array;
 }
 
 
