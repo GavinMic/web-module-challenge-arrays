@@ -59,16 +59,12 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
-
-
 function is31Flavors(array){
-   const newArray=[...array];
-   if(array[i]=(31)){
-       console.log("true");
-
-   }else{
-       console.log("false");
-   }
+    if (array.length == 31){
+       return true;
+    }else{
+       return false;
+    }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -84,8 +80,8 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(array){
-   const newArray=[...array];
+function addFlavor(originalFlavors){
+   const newArray=[...originalFlavors];
    newArray.unshift("Rainbow Sherbert!");
    console.log(newArray);
 }
@@ -102,8 +98,9 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(originalFlavors){
+   const newArray=[...originalFlavors];
+
 }
 
 
