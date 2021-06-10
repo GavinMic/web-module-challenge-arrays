@@ -170,16 +170,15 @@ function filterByWord(array,string){
     //make an empty array so that we can push our flavours to it
     const filteredFlavours=[];
     //loop through the entire array
-    for(let i=o; i<array.length; i++){
+    for(let i=0; i<array.length; i++){
         //if the index contains the string
         if(array[i].includes(string)){
             //push that index to the new array
-            filteredFlavours.push(array[i]);
+            filteredArray.push(array[i]);
         }
     }
-    return filteredFlavours;
+    return filteredArray;
 }
-
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
